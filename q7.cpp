@@ -5,6 +5,7 @@ double maximum(double *p,int size)
 {
     double temp=0;
     int i;
+    double *a=p;
     while(i<size)
     {
         if (*p>*(p+1))
@@ -14,6 +15,11 @@ double maximum(double *p,int size)
         p++;
         i++;
     }
+    if (a=NULL)
+    {
+        return NULL;
+    }
+    else
     return temp;
 }
 
